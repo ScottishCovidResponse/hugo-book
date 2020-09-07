@@ -12,6 +12,9 @@
 .custom-left {
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
+  @include mq(md) {
+    flex: 0 0 5rem;
+  }
 }
 
 .custom-search-container {

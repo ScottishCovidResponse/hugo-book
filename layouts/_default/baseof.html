@@ -9,18 +9,26 @@
 <body dir={{ .Site.Language.LanguageDirection }}>
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
-
+  {{ if default false .Site.Params.SearchEnabled }}
   <div class="custom-header">  
     <div class="container flex">
       <div class="custom-left">
-        {{ .Site.Title }}
+        <h2 class="book-brand">
+          <a href="{{ .Site.BaseURL | relLangURL }}">
+            {{- with .Site.Params.BookLogo -}}
+            <img src="{{ . | relURL }}" alt="Logo" />
+            {{- end -}}
+            <span>{{ .Site.Title }}</span>
+          </a>
+        </h2>
+        
       </div>
       <div class ="custom-search-container">
         {{ partial "docs/search-top" . }}
       </div>
     </div>    
   </div>
-
+  {{ end }}
   <main class="container flex">
     <aside class="book-menu">
       {{ template "menu" . }} <!-- Left menu Content -->
