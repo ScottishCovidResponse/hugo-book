@@ -41,8 +41,8 @@
   padding: $padding-16;
 }
 
-.container.flex.custom-flex {
-  @include mq(sm) {
+.custom-flex {
+  @include mq(md) {
     diplay: block;
   }
 }
