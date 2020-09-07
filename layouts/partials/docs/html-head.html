@@ -41,7 +41,7 @@
 {{- if default false .Site.Params.SearchEnabled }}
 {{- $fancy-searchJSFile := printf "%s.fancy-search.js" .Language.Lang }}
 {{- $fancy-searchJS := resources.Get "fancy-search.js" | resources.ExecuteAsTemplate $fancy-searchJSFile . | resources.Minify | resources.Fingerprint }}
-<script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>
+<script defer src="{{ $fancy-searchJS.RelPermalink }}" integrity="{{ $fancy-searchJS.Data.Integrity }}"></script>
 {{ end -}}
 
 {{- if .Site.Params.BookServiceWorker }}
