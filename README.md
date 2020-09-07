@@ -1,4 +1,4 @@
-# Hugo Book Theme
+# Modified Hugo Book Theme
 
 [![Hugo](https://img.shields.io/badge/hugo-0.68-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
