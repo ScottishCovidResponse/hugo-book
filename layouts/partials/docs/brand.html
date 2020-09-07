@@ -1,4 +1,4 @@
-{{ if not default false .Site.Params.SearchEnabled }}
+{{ if not (default false .Site.Params.SearchEnabled) }}
 <h2 class="book-brand">
   <a href="{{ .Site.BaseURL | relLangURL }}">
     {{- with .Site.Params.BookLogo -}}
