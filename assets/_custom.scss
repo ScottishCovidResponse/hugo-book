@@ -41,7 +41,7 @@
   padding: $padding-16;
 }
 
-@media only screen and (max-width: $md) {
+@media only screen and (max-width: $content-width) {
   .custom-flex {
     display: block !important;
   }
