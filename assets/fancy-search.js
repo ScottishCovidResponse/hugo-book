@@ -24,11 +24,11 @@
 {{- $searchJSONFile := printf "%s.fancy-search-data.json" .Language.Lang }}
 {{- $searchJSON := resources.Get "fancy-search-data.json" | resources.ExecuteAsTemplate $searchJSONFile . | resources.Fingerprint }}
 
-{{- if default true .Site.Params.SearchEnabled }}
+{{- if default false .Site.Params.SearchEnabled }}
   const searchInput = document.getElementById('search-input');
   {{ end -}}
 
-  {{- if default true .Site.Params.SearchEnabled }}
+  {{- if default false .Site.Params.SearchEnabled }}
 
   function initSearch() {
     var request = new XMLHttpRequest();
