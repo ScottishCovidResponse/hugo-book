@@ -43,7 +43,7 @@
 
 .custom-flex {
   @include mq(md) {
-    diplay: block;
+    diplay: block !important;
   }
 }
 
