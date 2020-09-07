@@ -19,9 +19,8 @@
         {{ template "header" . }} <!-- Mobile layout header -->
       </header>
 
-      {{ partial "docs/search-top" . }}
-
       {{ partial "docs/inject/content-before" . }}
+      {{ partial "docs/search-top" . }}
       {{ template "main" . }} <!-- Page Content -->
       {{ partial "docs/inject/content-after" . }}
 
