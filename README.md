@@ -175,6 +175,10 @@ disableKinds = ['taxonomy', 'taxonomyTerm']
   # Configuration for indexing can be adjusted in i18n folder per language.
   BookSearch = true
 
+  # (Optional, default false) Enables search function with lunrsearch,
+  # Index is built on fly, therefore it might slowdown your website.
+  SearchEnabled = false
+
   # (Optional, default true) Enables comments template on pages
   # By default partials/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
