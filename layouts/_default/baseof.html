@@ -13,7 +13,8 @@
   <div class="custom-header">  
     <div class="container flex">
       <div class="custom-left">
-        <h2 class="book-brand">
+        <div class="custom-brand">
+          <h2 class="book-brand custom">
           <a href="{{ .Site.BaseURL | relLangURL }}">
             {{- with .Site.Params.BookLogo -}}
             <img src="{{ . | relURL }}" alt="Logo" />
@@ -21,7 +22,7 @@
             <span>{{ .Site.Title }}</span>
           </a>
         </h2>
-        
+        </div>    
       </div>
       <div class ="custom-search-container">
         {{ partial "docs/search-top" . }}
