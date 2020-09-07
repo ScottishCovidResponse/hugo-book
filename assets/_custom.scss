@@ -43,7 +43,7 @@
 
 .custom-flex.container.flex {
   @include mq(md) {
-    diplay: block !important;
+    display: block !important;
   }
 }
 
