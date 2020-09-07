@@ -21,6 +21,20 @@
   margin:auto;
 }
 
+.custom-brand-text {
+  padding: .5rem;
+  img {
+    height: 1.5em;
+    width: auto;
+    vertical-align: middle;
+    margin-inline-end: $padding-8;
+  }
+
+  a{
+    color: $body-font-colo
+  }
+}
+
 .custom-search-container {
   min-width: $body-min-width;
   flex-grow: 1;
