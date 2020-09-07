@@ -2,11 +2,11 @@
 
 [![Hugo](https://img.shields.io/badge/hugo-0.68-blue.svg)](https://gohugo.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-![Build with Hugo](https://github.com/alex-shpak/hugo-book/workflows/Build%20with%20Hugo/badge.svg)
+![Build with Hugo](https://github.com/RyanJField/hugo-book/workflows/Build%20with%20Hugo/badge.svg)
 
 ### [Hugo](https://gohugo.io) documentation theme as simple as plain book
 
-![Screenshot](https://github.com/alex-shpak/hugo-book/blob/master/images/screenshot.png)
+![Screenshot](https://github.com/RyanJField/hugo-book/blob/master/images/screenshot.png)
 
 - [Features](#features)
 - [Requirements](#requirements)
@@ -41,7 +41,7 @@
 Navigate to your hugo project root and run:
 
 ```
-git submodule add https://github.com/alex-shpak/hugo-book themes/book
+git submodule add https://github.com/RyanJField/hugo-book themes/book
 ```
 
 Then run hugo (or set `theme = "book"`/`theme: book` in configuration file)
