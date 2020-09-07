@@ -9,6 +9,18 @@
 @import "plugins/mq";
 @import "plugins/typography";
 
+.custom-left {
+  flex: 0 0 $menu-width;
+  font-size: $font-size-14;
+}
+
+.custom-search-container {
+  min-width: $body-min-width;
+  flex-grow: 1;
+  padding: $padding-16;
+}
+}
+
 .search-top {
     max-width: 100%;
     padding-bottom: 15px;
