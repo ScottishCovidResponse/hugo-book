@@ -6,8 +6,10 @@
 // Search input and autocomplete
 //
 
-@import "plugins/nq";
+@import "plugins/mq";
 @import "plugins/typography";
+
+@import "plugins/normalize";
 
 .search-top {
     max-width: 100%;
