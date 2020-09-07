@@ -9,6 +9,14 @@
 <body dir={{ .Site.Language.LanguageDirection }}>
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
+
+  <div class="container flex custom-header">  
+    <aside class="branding">
+      {{ .Site.Title }}
+    </aside>  
+    {{ partial "docs/search-top" . }}
+  </div>
+
   <main class="container flex">
     <aside class="book-menu">
       {{ template "menu" . }} <!-- Left menu Content -->
@@ -20,7 +28,6 @@
       </header>
 
       {{ partial "docs/inject/content-before" . }}
-      {{ partial "docs/search-top" . }}
       {{ template "main" . }} <!-- Page Content -->
       {{ partial "docs/inject/content-after" . }}
 
