@@ -42,8 +42,8 @@
 }
 
 .container.flex.custom-flex {
-  @include mq(md) {
-    diplay: block
+  @include mq(sm) {
+    diplay: block;
   }
 }
 
