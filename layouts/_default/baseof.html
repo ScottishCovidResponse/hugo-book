@@ -10,11 +10,13 @@
   <input type="checkbox" class="hidden toggle" id="menu-control" />
   <input type="checkbox" class="hidden toggle" id="toc-control" />
 
-  <div class="container flex custom-header">  
-    <aside class="branding">
+  <div class="custom-header">  
+    <div class="custom-left">
       {{ .Site.Title }}
-    </aside>  
-    {{ partial "docs/search-top" . }}
+    </div>
+    <div class ="custom-search-container">
+      {{ partial "docs/search-top" . }}
+    </div>
   </div>
 
   <main class="container flex">
