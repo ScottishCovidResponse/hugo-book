@@ -41,6 +41,12 @@
   padding: $padding-16;
 }
 
+.custom-flex {
+  @include mq(md) {
+    diplay: block
+  }
+}
+
 .search-top {
     max-width: 100%;
     padding-bottom: 15px;
@@ -143,7 +149,7 @@
 
 .search-results {
   position: relative;
-  min-height: 25rem;
+  min-height: 5rem;
   left: 0;
   display: none;
   width: 100%;
