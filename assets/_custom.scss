@@ -41,10 +41,9 @@
   padding: $padding-16;
 }
 
-.custom-flex.container.flex {
-  @include mq(md) {
+@media only screen and (max-width: $md) {
+  .custom-flex {
     display: block !important;
-  }
 }
 
 .search-top {
