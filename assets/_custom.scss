@@ -416,14 +416,17 @@
   justify-content: flex-end;
   padding-left: .5rem;
 }
-// html:not([data-scroll='0']) {
+html:not([data-scroll='0']) {
 
-//   .custom-brand{
-//     position: fixed;
-//   }
+  .custom-brand{
+    position: fixed;
+    width: $menu-width;
+    border-bottom: 1px solid lightgray;
+  }
 
-//   .custom-search-container {
-//     //position: fixed;
-//   }
+  .custom-search-container {
+    border: none;
+    //position: fixed;
+  }
 
-// }
+}
