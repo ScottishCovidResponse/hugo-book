@@ -12,22 +12,16 @@
 .custom-left {
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
-  //border-bottom: 1px solid lightgray;
-  //z-index: 1000000;
+  border-bottom: 1px solid lightgray;
+  z-index: 1000000;
   @include mq(md) {
     flex: 0 0 5rem;
   }
 }
 
-.custom-left-inner {
-  border-bottom: 1px solid lightgray;
-  z-index: 100000;
-  position: fixed;
-}
-
 .custom-brand {
   margin:auto;
-  //position: fixed;
+  position: fixed;
 }
 
 .custom-brand-text {
@@ -63,9 +57,6 @@
   .custom-brand {    
     position: relative;
     //padding-left: 2.5rem;
-  }
-  .custom-left-inner{
-    position: relative;
   }
   .custom-brand-text {
     text-align: center;
