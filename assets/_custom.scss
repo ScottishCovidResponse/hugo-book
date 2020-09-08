@@ -68,6 +68,22 @@ html:not([data-scroll='0']) {
     border: none;
   }
 
+  @media only screen and (max-width: 897px) {
+    .custom-flex {
+      display: block !important;
+    }
+    .custom-brand {    
+      position: relative;
+      //padding-left: 2.5rem;
+    }
+    .custom-brand-text {
+      text-align: center;
+    }
+    .custom-left {
+      border: none;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 897px) {
