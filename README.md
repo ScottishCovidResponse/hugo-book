@@ -5,5 +5,7 @@ This theme is based on the Hugo [Book](https://github.com/alex-shpak/hugo-book) 
 SCRC Docs is a website containing information related to datasets, the data pipeline, and various other technical documents associated with the SCRC project.
 
 [Website](https://github.com/ScottishCovidResponse/ScottishCovidResponse.github.io)
+
 [Hugo source files](https://github.com/ScottishCovidResponse/hugo_source_files)
+
 [Website source files](https://github.com/ScottishCovidResponse/ScottishCovidResponse.github.io)
