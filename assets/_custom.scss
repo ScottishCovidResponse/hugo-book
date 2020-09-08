@@ -382,6 +382,12 @@
   }
 }
 
+.book-menu a.collapsed {
+  justify-content: flex-start;
+}
+.book-menu a.collapsed::after {
+  justify-content: flex-end;
+}
 // html:not([data-scroll='0']) {
 
 //   .custom-brand{
