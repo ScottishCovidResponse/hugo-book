@@ -45,6 +45,8 @@
 @media only screen and (max-width: $content-width) {
   .custom-flex {
     display: block !important;
+    position: relative;
+    padding-left: 2.5rem;
   }
 }
 
