@@ -19,6 +19,7 @@
 
 .custom-brand {
   margin:auto;
+  position: fixed;
 }
 
 .custom-brand-text {
@@ -381,14 +382,14 @@
   }
 }
 
-html:not([data-scroll='0']) {
+// html:not([data-scroll='0']) {
 
-  .custom-brand{
-    position: fixed;
-  }
+//   .custom-brand{
+//     position: fixed;
+//   }
 
-  .custom-search-container {
-    //position: fixed;
-  }
+//   .custom-search-container {
+//     //position: fixed;
+//   }
 
-}
+// }

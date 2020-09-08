@@ -25,22 +25,11 @@
 <script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>
 {{ end -}}
 
-{{- if default false .Site.Params.SearchEnabled }}
-<script defer type="text/javascript" src="/lunr.min.js"></script>
-{{ end -}}
-
-{{- if default false .Site.Params.SearchEnabled }}
-{{- $fancy_searchJSFile := printf "%s.fancy-search.js" .Language.Lang }}
-{{- $fancy_searchJS := resources.Get "fancy-search.js" | resources.ExecuteAsTemplate $fancy_searchJSFile . | resources.Minify | resources.Fingerprint }}
-<script defer src="{{ $fancy_searchJS.RelPermalink }}" integrity="{{ $fancy_searchJS.Data.Integrity }}"></script>
-{{ end -}}
 
 {{- if .Site.Params.BookServiceWorker }}
 {{- $swJS := resources.Get "sw-register.js" | resources.ExecuteAsTemplate "sw.js" . | resources.Minify | resources.Fingerprint }}
 <script defer src="{{ $swJS.RelPermalink }}" integrity="{{ $swJS.Data.Integrity }}"></script>
 {{ end -}}
-
-<script defer type="text/javascript" src="/scroll.js"></script>
 
 {{- template "_internal/google_analytics_async.html" . -}}
 
