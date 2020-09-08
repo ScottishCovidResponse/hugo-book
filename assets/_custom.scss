@@ -380,3 +380,15 @@
     }
   }
 }
+
+html:not([data-scroll='0']) {
+
+  .custom-left{
+    position: fixed;
+  }
+
+  .custom-search-container {
+    position: fixed;
+  }
+
+}
