@@ -387,6 +387,7 @@
 }
 .book-menu a.collapsed::after {
   justify-content: flex-end;
+  padding-left: .5rem;
 }
 // html:not([data-scroll='0']) {
 
