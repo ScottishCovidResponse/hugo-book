@@ -25,7 +25,6 @@
 <script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>
 {{ end -}}
 
-
 {{- if .Site.Params.BookServiceWorker }}
 {{- $swJS := resources.Get "sw-register.js" | resources.ExecuteAsTemplate "sw.js" . | resources.Minify | resources.Fingerprint }}
 <script defer src="{{ $swJS.RelPermalink }}" integrity="{{ $swJS.Data.Integrity }}"></script>
@@ -40,5 +39,5 @@
 
 {{ "<!--" | safeHTML }}
 Made with Book Theme
-https://github.com/alex-shpak/hugo-book
+https://github.com/RyanJField/hugo-book
 {{ "-->" | safeHTML }}
