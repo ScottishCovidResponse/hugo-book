@@ -48,7 +48,10 @@
   }
   .custom-brand {    
     position: relative;
-    padding-left: 2.5rem;
+    //padding-left: 2.5rem;
+  }
+  .custom-brand-text {
+    text-align: center;
   }
 }
 
@@ -67,7 +70,7 @@
   z-index: 2;
   flex-grow: 1;
   height: $sp-10;
-  padding: $sp-2;
+  //padding: $sp-2;
   transition: padding linear #{$transition-duration / 2};
 
   @include mq(md) {
