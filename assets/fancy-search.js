@@ -115,7 +115,7 @@
           boost: 10
         });
         query.term(tokens, {
-          wildcard: lunr.Query.wildcard.TRAILING
+          wildcard: lunr.Query.wildcard.LEADING | lunr.Query.wildcard.TRAILING
         });
       });
   

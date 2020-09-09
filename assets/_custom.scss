@@ -125,6 +125,11 @@ html:not([data-scroll='0']) {
   }
 }
 
+html.search-active {
+  .custom-left, .custom-search-container {
+    border-bottom: none;
+  }
+}
 
 .search-top {
     max-width: 100%;
