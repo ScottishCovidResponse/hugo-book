@@ -1,6 +1,7 @@
 {
+  {{- $pages := where .Site.Pages "Kind" "in" (slice "home" "page" "section")}}
     {{- $first:= true}}
-    {{- range $index, $page := where .Site.Pages "Kind" "in" (slice "home" "page" "section") }}
+    {{- range $index, $page := $pages }}
       {{- $i :=add $index 1 }}
       {{- if $page.Content }}
       {{- if not $first }}
@@ -9,9 +10,9 @@
       "{{$i}}": {
         "url": "{{ $page.RelPermalink }}",
         "relUrl": "{{ $page.RelPermalink }}",
-        "title": {{ (partial "docs/title" default "Title" $page) | jsonify }},
-        "doc": {{ (partial "docs/title" default "Doc" $page) | jsonify }},
-        "section": {{ (partial "docs/title" default "Section" $page.Parent) | jsonify }},
+        "title": {{ (partial "docs/title" $page) | jsonify }},
+        "doc": {{ (partial "docs/title" $page) | jsonify }},
+        "section": {{ (partial "docs/title" $page.Parent) | jsonify }},
         "content": {{$page.Plain | jsonify}}
       }
       {{- $first = false}}
