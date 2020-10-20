@@ -7,7 +7,8 @@
       {{- if not $first }}
       ,
       {{- end -}}
-      "{{$i}}": {
+      {{- if ne $page 0}}
+        "{{$i}}": {
         "url": "{{ $page.RelPermalink }}",
         "relUrl": "{{ $page.RelPermalink }}",
         "title": {{ (partial "docs/title" $page) | jsonify }},
@@ -15,6 +16,8 @@
         "section": {{ (partial "docs/title" $page.Parent) | jsonify }},
         "content": {{$page.Plain | jsonify}}
       }
+      {{- end -}}
+      
       {{- $first = false}}
       {{- end -}}
     {{- end -}}
