@@ -12,4 +12,8 @@
   {{ $title = .File.BaseFileName | humanize | title }}
 {{ end }}
 
+{{ if eq $title "" }}
+  {{ $title = " "}}
+{{ end }}
+
 {{ return $title }}
