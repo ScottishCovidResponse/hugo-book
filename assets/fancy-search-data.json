@@ -9,9 +9,9 @@
       "{{$i}}": {
         "url": "{{ $page.RelPermalink }}",
         "relUrl": "{{ $page.RelPermalink }}",
-        "title": {{ (partial "docs/title" $page) | jsonify }},
-        "doc": {{ (partial "docs/title" $page) | jsonify }},
-        "section": {{ (partial "docs/title" $page.Parent) | jsonify }},
+        "title": {{ (partial "docs/title" default "Title" $page) | jsonify }},
+        "doc": {{ (partial "docs/title" default "Doc" $page) | jsonify }},
+        "section": {{ (partial "docs/title" default "Section" $page.Parent) | jsonify }},
         "content": {{$page.Plain | jsonify}}
       }
       {{- $first = false}}
