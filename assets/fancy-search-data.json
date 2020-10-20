@@ -7,7 +7,7 @@
       {{- if not $first }}
       ,
       {{- end -}}
-      {{- if or (ne $page 0) (ne $page.Parent 0)}}
+      {{- if and (ne $page 0) (ne $page.Parent 0)}}
         "{{$i}}": {
         "url": "{{ $page.RelPermalink }}",
         "relUrl": "{{ $page.RelPermalink }}",
