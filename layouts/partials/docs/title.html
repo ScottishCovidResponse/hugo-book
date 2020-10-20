@@ -13,7 +13,7 @@
 {{ end }}
 
 {{ if eq $title "" }}
-  {{ $title = " "}}
+  {{ $title = default "Site Title" .Site.Params.title }}
 {{ end }}
 
 {{ return $title }}
