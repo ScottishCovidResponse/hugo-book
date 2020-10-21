@@ -7,13 +7,12 @@
       {{- if not $first }}
       ,
       {{- end -}}
-      
         "{{$i}}": {
         "url": "{{ $page.RelPermalink }}",
         "relUrl": "{{ $page.RelPermalink }}",
         "title": {{ (partial "docs/title" $page) | jsonify }},
         "doc": {{ (partial "docs/title" $page) | jsonify }},
-        "section": {{- if or (eq $page.Parent 0) (eq $page.Parent "") }} "" {{ else }} {{ (partial "docs/title" $page.Parent) | jsonify }} {{- end -}},
+        "section": {{ with $page.Parent }}{{ (partial "docs/title" .) | jsonify }}{{- else -}}""{{- end -}} ,
         "content": {{$page.Plain | jsonify}}
       }
             
